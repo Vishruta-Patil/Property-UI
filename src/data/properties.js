@@ -1,0 +1,61 @@
+export const properties = [
+  {
+    image: 'images/property1.png',
+    address: '2578 Folsom Street, San Francisco, CA, 94110',
+    price: '$1200/Month',
+    rooms: 2,
+    bathrooms: 2,
+    size: 75,
+  },
+  {
+    image: 'images/property2.png',
+    address: '2578 Folsom Street, San Francisco, CA, 94110',
+    price: '$1200/Month',
+    rooms: 2,
+    bathrooms: 2,
+    size: 75,
+  },
+  {
+    image: 'images/property3.png',
+    address: '2578 Folsom Street, San Francisco, CA, 94110',
+    price: '$1200/Month',
+    rooms: 2,
+    bathrooms: 2,
+    size: 75,
+  },
+  {
+    image: 'images/property4.png',
+    address: '2578 Folsom Street, San Francisco, CA, 94110',
+    price: '$1200/Month',
+    rooms: 2,
+    bathrooms: 2,
+    size: 75,
+  },
+  {
+    image: 'images/property5.png',
+    address: '2578 Folsom Street, San Francisco, CA, 94110',
+    price: '$1200/Month',
+    rooms: 2,
+    bathrooms: 2,
+    size: 75,
+  },
+  {
+    image: 'images/property6.png',
+    address: '2578 Folsom Street, San Francisco, CA, 94110',
+    price: '$1200/Month',
+    rooms: 2,
+    bathrooms: 2,
+    size: 75,
+  },
+];
+
+export const attributesData = [
+  { icon: 'dollar', text: 'Pay As Little As Possible!' },
+  { icon: 'building', text: 'Enjoy Wisdom Of Community!' },
+  { icon: 'handsHelping', text: "Let's Somebody Else Takecare" },
+  { icon: 'smile', text: 'Enjoy Peaceful Environment!' },
+  { icon: 'shieldAlt', text: 'Stay Safe! Save Money!' },
+  { icon: 'tree', text: 'Good Surrounding' },
+  { icon: 'wallet', text: 'Zero Deposit' },
+  { icon: 'creditCard', text: 'Pay For What You Use !' },
+];
