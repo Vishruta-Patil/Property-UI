@@ -7,6 +7,7 @@ import FeaturesSection from '@/components/FeaturesSection';
 import AttributeSection from '@/components/AttributeSction';
 import { attributesData, properties } from '@/data/properties';
 import ImageOverlay from '@/components/ImageOverlay';
+import React, { useState } from 'react';
 
 export default function Home() {
     return (

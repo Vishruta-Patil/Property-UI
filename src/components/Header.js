@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import React, { useState } from 'react';
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

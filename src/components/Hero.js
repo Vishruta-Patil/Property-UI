@@ -1,4 +1,5 @@
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import React, { useState } from 'react';
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
