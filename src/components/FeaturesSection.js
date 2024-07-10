@@ -1,5 +1,3 @@
-import React from 'react';
-
 const features = [
   {
     image: '/images/Feature1.png', 
