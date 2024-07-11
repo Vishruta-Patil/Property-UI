@@ -1,0 +1,51 @@
+[
+    {
+      "image": "/images/property1.png",
+      "address": "2578 Folsom Street, San Francisco, CA, 94110",
+      "price": "$1200/Month",
+      "rooms": 2,
+      "bathrooms": 2,
+      "size": 75
+    },
+    {
+      "image": "/images/property2.png",
+      "address": "2578 Folsom Street, San Francisco, CA, 94110",
+      "price": "$1200/Month",
+      "rooms": 2,
+      "bathrooms": 2,
+      "size": 75
+    },
+    {
+      "image": "/images/property3.png",
+      "address": "2578 Folsom Street, San Francisco, CA, 94110",
+      "price": "$1200/Month",
+      "rooms": 2,
+      "bathrooms": 2,
+      "size": 75
+    },
+    {
+      "image": "/images/property4.png",
+      "address": "2578 Folsom Street, San Francisco, CA, 94110",
+      "price": "$1200/Month",
+      "rooms": 2,
+      "bathrooms": 2,
+      "size": 75
+    },
+    {
+      "image": "/images/property5.png",
+      "address": "2578 Folsom Street, San Francisco, CA, 94110",
+      "price": "$1200/Month",
+      "rooms": 2,
+      "bathrooms": 2,
+      "size": 75
+    },
+    {
+      "image": "/images/property6.png",
+      "address": "2578 Folsom Street, San Francisco, CA, 94110",
+      "price": "$1200/Month",
+      "rooms": 2,
+      "bathrooms": 2,
+      "size": 75
+    }
+  ]
+  

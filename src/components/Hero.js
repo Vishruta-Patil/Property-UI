@@ -4,10 +4,15 @@ import React, { useState } from 'react';
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleMenuToggle = () => {
+    console.log('Menu toggled');
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('/images/hero-img.png')" }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
-      <nav className="absolute top-0 left-0 right-0 flex justify-between items-center p-5 text-white">
+      <nav className="relative flex justify-between items-center p-5 text-white z-20">
         <div className="flex items-center">
           <img src="/images/logo.png" alt="Logo" className="h-8 mr-3" />
           <span className="text-xl font-bold">Minimum Living Cost</span>
@@ -23,19 +28,20 @@ const Hero = () => {
           <button className="bg-orange-600 px-4 py-2 rounded-md">Sign Up</button>
         </div>
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)}>
+          <button onClick={handleMenuToggle}>
             {isOpen ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
           </button>
         </div>
       </nav>
       {isOpen && (
-        <div className="absolute top-0 left-0 right-0 bg-black text-white flex flex-col items-center space-y-6 py-6 md:hidden">
-          <a href="#" className="hover:text-gray-300">Home</a>
-          <a href="#" className="hover:text-gray-300">Our Mission</a>
-          <a href="#" className="hover:text-gray-300">About Us</a>
-          <a href="#" className="hover:text-gray-300">Landlord</a>
-          <a href="#" className="hover:text-gray-300">Tenants</a>
-          <a href="#" className="hover:text-gray-300">Contact Us</a>
+        <div className="bg-black text-white flex flex-col items-center space-y-6 py-6 md:hidden absolute top-0 left-0 right-0 z-10">
+          <div></div>
+          <a href="#" className="hover:text-gray-700">Home</a>
+          <a href="#" className="hover:text-gray-700">Our Mission</a>
+          <a href="#" className="hover:text-gray-700">About Us</a>
+          <a href="#" className="hover:text-gray-700">Landlord</a>
+          <a href="#" className="hover:text-gray-700">Tenants</a>
+          <a href="#" className="hover:text-gray-700">Contact Us</a>
           <button className="bg-white text-black px-4 py-2 rounded-md">Log In</button>
           <button className="bg-orange-600 px-4 py-2 rounded-md">Sign Up</button>
         </div>

@@ -5,11 +5,35 @@ import Testimonials from '../components/Testimonials';
 import Footer from '../components/Footer';
 import FeaturesSection from '@/components/FeaturesSection';
 import AttributeSection from '@/components/AttributeSction';
-import { attributesData, properties } from '@/data/properties';
-import ImageOverlay from '@/components/ImageOverlay';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Home() {
+    const [properties, setProperties] = useState([]);
+    const attributesData = [
+        { icon: 'dollar', text: 'Pay As Little As Possible!' },
+        { icon: 'building', text: 'Enjoy Wisdom Of Community!' },
+        { icon: 'handsHelping', text: "Let's Somebody Else Takecare" },
+        { icon: 'smile', text: 'Enjoy Peaceful Environment!' },
+        { icon: 'shieldAlt', text: 'Stay Safe! Save Money!' },
+        { icon: 'tree', text: 'Good Surrounding' },
+        { icon: 'wallet', text: 'Zero Deposit' },
+        { icon: 'creditCard', text: 'Pay For What You Use !' },
+    ];
+
+    const fetchProperties = async () => {
+        try {
+            const response = await fetch('propertyDetails.json');
+            const data = await response.json();
+            setProperties(data);
+        } catch (error) {
+            console.error('Error fetching property data:', error);
+        }
+    };
+
+    useEffect(() => {
+        fetchProperties();
+    }, []);
+
     return (
         <>
             <Hero />
@@ -47,12 +71,7 @@ export default function Home() {
             </section>
 
             <div className="flex container mx-auto p-4">
-                <div className="w-1/2">
-                    <Testimonials />
-                </div>
-                <div className="w-1/2">
-                    <ImageOverlay />
-                </div>
+                <Testimonials />
             </div>
 
             <Footer />
